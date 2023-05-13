@@ -24,5 +24,13 @@ class UserRepository {
       throw error;
     }
   }
+
+  async updateUser(userId, data) {
+    try {
+    } catch (error) {
+      console.log("Something went wrong in repository layer");
+      throw error;
+    }
+  }
 }
 module.exports = UserRepository;
