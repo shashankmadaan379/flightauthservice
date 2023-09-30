@@ -4,7 +4,7 @@ const UserController = require("../../controllers/user-controller");
 const { AuthRequestValidators } = require("../../middlewares/index");
 router.post(
   "/user",
-  AuthRequestValidators.validateUserAuth,
+  // AuthRequestValidators.validateUserAuth,
   UserController.create
 );
 router.delete("/user/:id", UserController.destroy);
